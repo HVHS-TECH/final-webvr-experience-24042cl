@@ -9,7 +9,7 @@ y<!DOCTYPE html>
     <body>
     <a-scene>
 
-      <a-entity position="-3.5 1 -0.02601" rotation="0 45 0" geometry="" material="opacity: 0.25; color: red">
+      
      
      
 
@@ -17,15 +17,22 @@ y<!DOCTYPE html>
 
       <a-plane color="#292989" position="0 -9 20" scale="100 100 100" rotation="-90 0 0"></a-plane>
       
-      <a-entity ply-model="src: Jaeger Conn-Pod.ply" position="-20 -20 -20" rotation="-180 0 0" scale="10 10 10" material="opacity: 0.25" animation="property: rotation;
+      <a-entity ply-model="src: Jaeger Conn-Pod visor.ply" position="-20 -20 -20" rotation="-180 0 0" scale="10 10 10" material="opacity: 0.50; color: yellow" animation="property: rotation;
       from: -2 0 0;
       to: -1 0 0;
       dur: 2000;
       loop: true;
       dir:alternate" ></a-entity>
-
+      <a-entity ply-model="src: Jaeger Conn-Pod head.ply" position="-20 -20 -20" rotation="-180 0 0" scale="10 10 10" animation="property: rotation;
+      from: -2 0 0;
+      to: -1 0 0;
+      dur: 2000;
+      loop: true;
+      dir:alternate" ></a-entity>
       
-      
+      <a-entity id="river" geometry="primitive: plane" material="color: blue"
+            position="0 0 0" sound="src: url(gipsy-danger-horn-sfx-made-with-Voicemod.mp3); autoplay: true"></a-entity>
+sf
 
     
       
